@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Netflix</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #141414; /* Netflix background color */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e50914; /* Netflix red */
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .search-input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #2075a7;
+            background-color: hsl(327, 47%, 4%);
+            color: white;
+        }
+        .container {
+            background-color: rgba(2, 5, 2, 0.836); /* Semi-transparent black */
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin-top: 100px; /* Space for header */
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #333; /* Dark input background */
+            color: white;
+        }
+        input::placeholder {
+            color: #888; /* Placeholder color */
+        }
+        button {
+            background-color: #e50914; /* Netflix red */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #f6121d; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Netflix</div>
+        <div class="menu">
+            <input type="text" class="search-input" placeholder="Search" />
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">TV Shows</a>
+            <a href="#" class="menu-item">Movies</a>
+            <a href="#" class="menu-item">Latest</a>
+            <a href="#" class="menu-item">My List</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Email or phone number" required style="font-size: 16px;">
+            <input type="password" placeholder="Password" required style="font-size: 16px;">
+            <button type="submit">Sign In</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="#" style="color: #888;">Need help?</a>
+        </p>
+    </div>
+</body>
+</html>
